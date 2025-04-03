@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1557279366 source:c:\users\gabriel haddad\desktop\mymfs\main.cpp
+	<iostream>
+	<fstream>
+	<math.h>
+	<string>
+	<windows.h>
+
+1558055886 source:c:\users\gabriel haddad\desktop\pessoal\mymfs\main.cpp
+	"comandos.h"
+	<iostream>
+	<string>
+
+1558056138 source:c:\users\gabriel haddad\desktop\pessoal\mymfs\comandos.cpp
+	"comandos.h"
+	<iostream>
+	<fstream>
+	<math.h>
+	<string>
+	<windows.h>
+
+1558056173 c:\users\gabriel haddad\desktop\pessoal\mymfs\comandos.h
+	<string>
+
