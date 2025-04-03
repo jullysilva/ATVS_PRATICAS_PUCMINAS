@@ -1,0 +1,12 @@
+var db = {
+    "results": [
+        {
+           "nome": ,
+           "genero": ,
+           "temporadas": ,
+           "pesronagem": ,
+           "publico": ,
+           "imagem": ,
+           "sinopse": 
+        }
+]}
