@@ -1,0 +1,37 @@
+version: "3.11"
+services:
+  postgres:
+    build: postgres
+    env_file:
+      - library_back/.env
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data:/var/lib/postgresql/data
+  django_api:
+    build: ./library_back
+    depends_on:
+      - postgres
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./library_back:/app
+    env_file:
+      - library_back/.env
+  node:
+    image: frontend
+    build: ./library_front
+    ports:
+      - 3000:3000
+    depends_on:
+      - postgres
+      - django_api
+    volumes:
+      - ./library_front:/app/
+      - /app/node_modules
+  nginx:
+    image: nginx
+    ports:
+      - 8080:80
+    depends_on:
+      - node
