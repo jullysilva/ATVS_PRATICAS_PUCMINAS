@@ -1,1 +1,5 @@
-*/.git
+PUC_GCES_JS/node_modules/
+PUC_GCES_JS/env
+PUC_GCES_JS/library_front/package-lock.json
+PUC_GCES_JS/data/
+PUC_GCES_JS/.vscode
